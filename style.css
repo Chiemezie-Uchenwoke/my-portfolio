@@ -1,0 +1,761 @@
+body{
+    font-family: "Source Sans 3", sans-serif;
+    background-color: rgb(250, 250, 250);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    letter-spacing: 0.5px;
+}
+
+/* Hero Styling */
+.hero{
+    width: 100%;
+    /* min-height: 90vh; */
+    display: inline-flex;
+    flex-direction: column;
+    background-color: rgb(250, 250, 250);
+}
+
+.container-hero{
+    margin: 3rem 1.2rem;
+    background-color: rgb(250, 250, 250);
+}
+
+.intro{
+    font-size: 1.2rem;
+}
+
+.container-hero > h1{
+    font-size: 3rem;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+}
+
+.hero-txt > p{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding-bottom: 3rem;
+}
+
+.btn-style{
+    text-align: left;
+    text-decoration: none;
+    background-color: #4E4FEB;
+    color: white;
+    display: inline-block;
+    padding: 0.7rem 4rem;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+    transition: transform .3s
+}
+
+.btn-style:hover{
+    transform: translateY(-3px)
+}
+
+/* About me styling */
+.about-me{
+    margin: 4rem 1.2rem;
+}
+
+.about-title{
+    font-size: 2rem;
+}
+
+hr{
+    width: 10%;
+    color: #4E4FEB;
+    border: solid #4E4FEB 3px;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+.about-container{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.about1 > h3{
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.about1 > p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.abt-txt{
+    color: rgb(86, 86, 86);
+    font-weight: bold;
+}
+
+.linked-in{
+    text-decoration: none;
+    color: #4E4FEB;
+    font-weight: 800;
+}
+
+.about1 > p:nth-child(5){
+    padding-bottom: 1rem;
+}
+
+.btn-body{
+    text-align: left;
+    text-decoration: none;
+    background-color: #4E4FEB;
+    color: white;
+    display: inline-block;
+    padding: 0.7rem 2.5rem;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+    transition: transform .3s
+}
+
+.btn-body:hover{
+    transform: translateY(-3px)
+}
+
+.about2{
+    margin-top: 4rem;
+}
+
+.about2 > h3{
+    margin-bottom: 1.5rem;
+}
+
+.about2-cont{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.about2-cont > div{
+    background-color: rgb(226, 226, 226);
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+}
+
+.dev-sign{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+/* Project Styling */
+.project{
+    margin: 7rem 1.2rem;
+}
+
+.proj-descrpt{
+    margin-top: 1.2rem;
+}
+
+.grid-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.grid img{
+    width: 100%;
+    display: block;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.grid1,.grid3,.grid5,.grid7{
+    margin-top: 2.5rem;
+}
+
+.grid2,.grid4,.grid6.grid8{
+    margin-top: 1rem;
+}
+
+.grid h3{
+    padding-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.grid > p{
+    padding-bottom: 1.5rem;
+ }
+
+.scroll{
+    text-align: center;
+}
+
+.scroll > a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px){
+
+    /* Hero styling */
+    .container-hero{
+        margin: 3rem 2rem;
+    }
+   
+    .intro{
+        font-size: 1.5rem;
+    }
+
+    .container-hero > h1{
+        font-size: 4.5rem;
+        line-height: 6rem;
+    }
+
+    .hero-txt > p{
+        font-size: 1.4rem;
+        padding-right: 5rem;
+        line-height: 2.5rem;
+    }
+
+    .btn-style{
+        padding: 1rem 5rem;
+    }
+
+    /* about-styling */
+    .about-me{
+        margin: 5rem 2.5rem;
+    }
+
+    .about-title{
+        font-size: 3rem;
+    }
+    
+    hr{
+        width: 6%;
+        color: #4E4FEB;
+        border: solid #4E4FEB 3px;
+        border-radius: 5px;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .about-container{
+        display: inline-flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .about1 > h3{
+        font-size: 2rem;
+    }
+    
+    .about1 > p{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        line-height: 1.9rem;
+        font-size: 1rem;
+    }
+
+  /*  .hero-btn > a{
+    padding: 1.2rem 3rem;
+    font-size: 1rem;
+   } */
+
+   .about2 > h3{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.about2-cont > div{
+    font-weight: 600;
+    color: rgb(105, 105, 105);
+}
+
+    /* Project Styling */
+    .project{
+        margin: 7rem 2rem;
+    }
+    
+    .proj-descrpt{
+        margin-top: 1.4rem;
+        margin-bottom: -1rem;
+        font-size: 1.2rem;
+    }
+    
+   /*  .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+    } */
+    
+    .grid img{
+        width: 100%;
+        display: block;
+        -o-object-fit: cover;
+        object-fit: cover
+    }
+    
+   /*  .grid1,.grid3,.grid5,.grid7{
+        margin-top: 2.5rem;
+    } */
+    
+    .grid2,.grid4,.grid6.grid8{
+        margin-top: -1rem;
+    }
+    
+    .grid h3{
+        padding-bottom: 1rem;
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+    
+    .grid > p{
+        padding-bottom: 1.7rem;
+        font-size: 1rem;
+    }
+
+    .btn-body{
+        padding: 1rem 3rem;
+    }
+} 
+
+/* laptops */
+@media (min-width: 992px) and (max-width: 1024px){
+    .hero{
+        margin: 3rem 2rem;
+    }
+
+    .intro{
+        font-size: 1.5rem;
+    }
+
+    .container-hero > h1{
+        font-size: 5rem;
+    }
+
+    .hero-txt > p{
+        font-size: 2rem;
+        padding-right: 5rem;
+        line-height: 3.4rem;
+    }
+
+    .btn-style{
+        padding: 1rem 5rem;
+    }
+
+    /* about-styling */
+    .about-me{
+        margin: 3rem 3rem;
+    }
+
+    .about-title{
+        font-size: 3.5rem;
+    }
+    
+    hr{
+        width: 6%;
+        color: #4E4FEB;
+        border: solid #4E4FEB 3px;
+        border-radius: 5px;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .about-container{
+        display: inline-flex;
+        flex-direction: row;
+        gap: 5rem;
+    }
+    
+    .about1 > h3{
+        font-size: 2rem;
+    }
+    
+    .about1 > p{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        line-height: 1.7rem;
+        font-size: 1.2rem;
+    }
+
+    .btn-body{
+        padding: 1.1rem 3rem;
+        font-size: 1.1rem;
+    }
+
+    .about2-cont > div{
+        font-weight: 600;
+        color: rgb(105, 105, 105);
+        font-size: 1.1rem;
+    }
+    /* Project Styling */
+    .project{
+        margin: 10rem 3rem;
+    }
+    
+    .proj-descrpt{
+        margin-top: 1.4rem;
+        margin-bottom: -1rem;
+        font-size: 1.3rem;
+    }
+    
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 3rem;
+        align-items: center;
+    }
+    
+
+    .grid img{
+        width: 100%;
+        display: block;
+        -o-object-fit: cover;
+        object-fit: cover
+    }
+    
+   /*  .grid1,.grid3,.grid5,.grid7{
+        margin-top: 2.5rem;
+    } */
+    
+   /*  .grid2,.grid4,.grid6.grid8{
+        margin-top: -1rem;
+    } */
+    
+    .grid h3{
+        padding-bottom: 1rem;
+        font-weight: bold;
+        font-size: 1.7rem;
+    }
+    
+    .grid > p{
+        padding-bottom: 1.7rem;
+        font-size: 1.1rem;
+    }
+
+    .btn-body{
+        padding: 1rem 3rem;
+    }
+}
+
+
+/* desktops */
+@media (min-width: 1025px) and (max-width: 1440px){
+    
+    .container-hero{
+        margin: 3rem 2.5rem;
+    }
+
+    .about-me{
+        margin: 4rem 3rem;
+    }
+
+    .hero{
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+
+
+    .intro{
+        font-size: 1.8rem;
+    }
+
+    .container-hero > h1{
+        font-size: 5rem;
+    }
+
+    .hero-txt > p{
+        font-size: 2.4rem;
+        padding-right: 5rem;
+        line-height: 4.3rem;
+    }
+
+    .btn-style{
+        padding: 1rem 5rem;
+    }
+
+    /* about-styling */
+    .about-me{
+        margin: 3rem 2.5rem;
+    }
+    
+    .about-title{
+        font-size: 4.2rem;
+    }
+    
+    hr{
+        width: 6%;
+    }
+    
+    .about-container{
+        display: inline-flex;
+        flex-direction: row;
+        gap: 4.5rem;
+    }
+
+    .about-container > div{
+        width: 50%;
+    }
+    
+    .about1 > h3{
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        font-size: 2.1rem;
+    }
+    
+    .about1 > p{
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        letter-spacing: 0.5px;
+    }
+
+   /*  .linked-in{
+        letter-spacing: 0px;
+    } */
+
+    .btn-body{
+        padding: 1.1rem 3rem;
+        font-size: 1.1rem;
+    }
+
+    .about2 > h3{
+        margin-bottom: 2rem;
+        font-size: 2.1rem;
+    }
+    
+    .about2-cont{
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 1.2rem;
+    }
+    
+    .about2-cont > div{
+        background-color: rgb(226, 226, 226);
+        padding: 0.5rem 1.5rem;
+        border-radius: 5px;
+        font-size: 1.3rem;
+        letter-spacing: 0.5px;
+    }
+
+
+    /* project styling */
+    .project{
+        margin: 10rem 2.5rem;
+    }
+    
+    .proj-descrpt{
+        margin-top: 1.4rem;
+        margin-bottom: -1rem;
+        font-size: 1.3rem;
+    }
+    
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 3rem;
+        align-items: center;
+    }
+    
+
+    .grid img{
+        width: 100%;
+        display: block;
+        -o-object-fit: cover;
+        object-fit: cover
+    }
+    
+   /*  .grid1,.grid3,.grid5,.grid7{
+        margin-top: 2.5rem;
+    } */
+    
+   /*  .grid2,.grid4,.grid6.grid8{
+        margin-top: -1rem;
+    } */
+    
+    .grid h3{
+        padding-bottom: 1rem;
+        font-weight: bold;
+        font-size: 1.8rem;
+    }
+    
+    .grid > p{
+        padding-bottom: 1.7rem;
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+
+    .btn-body{
+        padding: 1rem 3rem;
+    }
+
+}
+
+/* TVs */
+@media (min-width: 1441px){
+    
+    .container-hero{
+        margin: 3rem 3rem;
+    }
+
+    .about-me{
+        margin: 4rem 3rem;
+    }
+
+    .hero{
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+
+
+    .intro{
+        font-size: 1.8rem;
+    }
+
+    .container-hero > h1{
+        font-size: 4.8rem;
+    }
+
+    .hero-txt > p{
+        font-size: 2.2rem;
+        padding-right: 5rem;
+        line-height: 4.3rem;
+    }
+
+    .btn-style{
+        padding: 1rem 5rem;
+    }
+
+    /* about-styling */
+    .about-me{
+        margin: 3rem 2.5rem;
+    }
+    
+    .about-title{
+        font-size: 4.2rem;
+    }
+    
+    hr{
+        width: 6%;
+    }
+    
+    .about-container{
+        display: inline-flex;
+        flex-direction: row;
+        gap: 4.5rem;
+    }
+
+    .about-container > div{
+        width: 50%;
+    }
+    
+    .about1 > h3{
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        font-size: 2.1rem;
+    }
+    
+    .about1 > p{
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        letter-spacing: 0.5px;
+    }
+
+   /*  .linked-in{
+        letter-spacing: 0px;
+    } */
+
+    .btn-body{
+        padding: 1.1rem 3rem;
+        font-size: 1.1rem;
+    }
+
+    .about2 > h3{
+        margin-bottom: 2rem;
+        font-size: 2.1rem;
+    }
+    
+    .about2-cont{
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 1.2rem;
+    }
+    
+    .about2-cont > div{
+        background-color: rgb(226, 226, 226);
+        padding: 0.5rem 1.5rem;
+        border-radius: 5px;
+        font-size: 1.4rem;
+        letter-spacing: 0.5px;
+    }
+
+
+    /* project styling */
+    .project{
+        margin: 10rem 2.5rem;
+    }
+    
+    .proj-descrpt{
+        margin-top: 1.4rem;
+        margin-bottom: -1rem;
+        font-size: 1.3rem;
+    }
+    
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 3rem;
+        align-items: center;
+    }
+    
+
+    .grid img{
+        width: 100%;
+        display: block;
+        -o-object-fit: cover;
+        object-fit: cover
+    }
+    
+   /*  .grid1,.grid3,.grid5,.grid7{
+        margin-top: 2.5rem;
+    } */
+    
+   /*  .grid2,.grid4,.grid6.grid8{
+        margin-top: -1rem;
+    } */
+    
+    .grid h3{
+        padding-bottom: 1rem;
+        font-weight: bold;
+        font-size: 1.8rem;
+    }
+    
+    .grid > p{
+        padding-bottom: 1.7rem;
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+
+    .btn-body{
+        padding: 1rem 3rem;
+    }
+}
+
