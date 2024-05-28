@@ -36,9 +36,9 @@ p{
 }
 
 .container-hero > h1{
-    font-size: 3.5rem;
-    padding-top: 1.4rem;
-    padding-bottom: 1.4rem;
+    font-size: 4rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .hero-txt > p{
@@ -73,7 +73,7 @@ p{
 }
 
 .about-title{
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 hr{
