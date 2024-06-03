@@ -53,7 +53,7 @@ p{
     background-color: #4E4FEB;
     color: white;
     display: inline-block;
-    padding: 0.7rem 4rem;
+    padding: 0.7rem 3rem;
     font-size: 1.4rem;
     letter-spacing: 1px;
     font-weight: bold;
@@ -488,7 +488,7 @@ hr{
     }
 
     .btn-style{
-        padding: 1rem 5rem;
+        padding: 1rem 4rem;
     }
 
     /* about-styling */
@@ -758,4 +758,3 @@ hr{
         padding: 1rem 3rem;
     }
 }
-
