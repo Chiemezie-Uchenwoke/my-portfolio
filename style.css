@@ -24,6 +24,7 @@ p{
     display: inline-flex;
     flex-direction: column;
     background-color: rgb(250, 250, 250);
+    text-align: center;
 }
 
 .container-hero{
@@ -35,14 +36,21 @@ p{
     font-size: 1.3rem;
 }
 
+.intro img {
+    width: 25%;
+    border-radius: 50%;
+    
+}
+
 .container-hero > h1{
-    font-size: 3.7rem;
+    font-size: 3.5rem;
     padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    line-height: 4rem;
 }
 
 .hero-txt > p{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 2rem;
     padding-bottom: 3rem;
 }
@@ -209,6 +217,116 @@ hr{
     color: black;
 }
 
+/* resume styling */
+.resume{
+    margin: 6rem 1.2rem;
+}
+
+.resume-container{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.resume-container img{
+    width: 60%;
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 5px;
+    padding: 1.5rem 0rem;
+}
+
+.training-cont{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr * 4);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.txt-exp{
+    padding-bottom: 0.5rem;
+}
+
+.resume-container h3{
+    font-size: 1.2rem;
+}
+
+.experience h4{
+    color: #555555;
+}
+
+.boot-txt{
+    padding-bottom: 3rem;
+}
+
+/* contact */
+.contact{
+    background-color: #fafafa;
+    padding: 5rem 1.2rem;
+    color: black;
+}
+
+.contact-btn{
+    text-align: left;
+    text-decoration: none;
+    background-color: #4E4FEB;
+    color: #fafafa;
+    display: inline-block;
+    padding: 0.7rem 2.5rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+    transition: transform .3s
+}
+
+.contact-btn:hover{
+    transform: translateY(-3px)
+}
+
+.contact-container > p{
+    padding: 3rem 0rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.footer{
+    margin-top: 0rem;
+    padding: 6rem 1.2rem;
+    background-color: black;
+    color: white;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.copyright{
+    font-size: 0.9rem;
+    padding-top: 1rem;
+}
+
+.copyright a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #4E4FEB;
+}
+
+.footer-container h2{
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
 
 /* Tablets */
 @media (min-width: 768px) and (max-width: 991px){
@@ -222,24 +340,31 @@ hr{
         font-size: 1.5rem;
     }
 
+    .intro img {
+        width: 14%;
+        border-radius: 50%;
+    }
+
     .container-hero > h1{
-        font-size: 4.5rem;
+        font-size: 4rem;
         line-height: 6rem;
     }
 
     .hero-txt > p{
         font-size: 1.4rem;
-        padding-right: 5rem;
         line-height: 2.5rem;
+        padding: 0rem 2rem;
+        padding-bottom: 2rem;
+        width: 100%;
     }
 
     .btn-style{
-        padding: 1rem 5rem;
+        padding: 1rem 4rem;
     }
 
     /* about-styling */
     .about-me{
-        margin: 5rem 2.5rem;
+        margin: 5rem 2rem;
     }
 
     .about-title{
@@ -305,10 +430,11 @@ hr{
     } */
     
     .grid img{
-        width: 100%;
+        width: 80%;
         display: block;
         -o-object-fit: cover;
-        object-fit: cover
+        object-fit: cover;
+        margin: 0rem auto;
     }
     
    /*  .grid1,.grid3,.grid5,.grid7{
@@ -333,7 +459,109 @@ hr{
     .btn-body{
         padding: 1rem 3rem;
     }
+
+
+/* resume styling */
+    .resume{
+        margin: 6rem 2rem;
+    }
+
+    .resume-container{
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+
+    .resume-container img{
+        width: 70%;
+        margin-top: 1.5rem;
+    }
+
+   .flex1{
+    width: 50%;
+   }
+
+   .flex2{
+    width: 50%;
+   }
+
+   .training-cont{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    align-content: center;
+    height: 90vh;
+    }
+
+    .txt-exp{
+        padding-bottom: 0.5rem;
+    }
+
+    .resume-container h3{
+        font-size: 1.2rem;
+    }
+
+    .experience h4{
+        color: #555555;
+    }
+
+    /* contact */
+
+    .contact{
+        padding: 5rem 2rem;
+    }
+
+    .contact-container > p{
+        padding: 3rem 0rem;
+        font-size: 1.5rem;
+        letter-spacing: 0.5px;
+        text-transform: capitalize;
+    }
+
+    /* footer */
+    
+    .footer{
+        margin-top: 0rem;
+        padding: 6rem 2rem;  
+    }
+    
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        justify-content: space-between;
+        letter-spacing: 0.5px;
+        line-height: 2rem;
+    }
+
+    .cont1-ft{
+        width: 75%;
+    }
+
+    .cont1-ft > p{
+        padding: 1.5rem 0rem;
+    }
+    
+    .copyright{
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+    
+    .copyright a{
+        text-decoration: none;
+        font-weight: bold;
+        color: #4E4FEB;
+    }
+    
+    .footer-container h2{
+        padding-bottom: 1rem;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+    }
 } 
+
 
 /* laptops */
 @media (min-width: 992px) and (max-width: 1024px){
@@ -345,14 +573,25 @@ hr{
         font-size: 1.5rem;
     }
 
+    .intro img {
+        width: 13%;
+        border-radius: 50%;
+        
+    }
+
     .container-hero > h1{
         font-size: 5rem;
+        padding-top: 2.5rem;
     }
 
     .hero-txt > p{
-        font-size: 2rem;
-        padding-right: 5rem;
-        line-height: 3.4rem;
+        font-size: 1.7rem;
+        line-height: 2.8rem;
+        padding-right: 6rem;
+        padding-left: 6rem;
+        padding-top: 1rem;
+        padding-bottom: 2.5rem;
+        width: 100%;
     }
 
     .btn-style{
@@ -453,47 +692,151 @@ hr{
     .btn-body{
         padding: 1rem 3rem;
     }
-}
+
+    /* resume styling */
+    .resume{
+        margin: 6rem 3rem;
+    }
+
+    .resume-container{
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        font-size: 1.1rem;
+        gap: 3rem;
+    }
+
+    .resume-container img{
+        width: 70%;
+        margin-top: 1.5rem;
+    }
+
+    .flex1{
+        width: 50%;
+    }
+    
+    .flex2{
+        width: 50%;
+    }
+
+    .training-cont{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 3rem;
+        margin-top: 1.5rem;
+        align-items: flex-start ;
+        height: 82vh;
+        font-size: 1.1rem;
+        }
+    
+        .txt-exp{
+            padding-bottom: 0.5rem;
+        }
+    
+        .resume-container h3{
+            font-size: 1.2rem;
+        }
+    
+        .experience h4{
+            color: #555555;
+        }
+
+        /* contact */
+
+    .contact{
+        padding: 5rem 3rem;
+    }
+
+    .contact-container > p{
+        padding: 3rem 0rem;
+        font-size: 2.2rem;
+    }
+
+    /* footer */
+    
+    .footer{
+        margin-top: 0rem;
+        padding: 8rem 3rem;  
+    }
+    
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        justify-content: space-between;
+        letter-spacing: 0.5px;
+        line-height: 2rem;
+    }
+
+    .cont1-ft{
+        width: 75%;
+    }
+
+    .cont1-ft > p{
+        padding: 1.5rem 0rem;
+        font-size: 1.2rem;
+    }
+    
+    .copyright{
+        font-size: 1.2rem;
+        padding-top: 1rem;
+    }
+    
+    .footer-container h2{
+        padding-bottom: 1rem;
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+
+} 
 
 
 /* desktops */
 @media (min-width: 1025px) and (max-width: 1440px){
     
     .container-hero{
-        margin: 3rem 2.5rem;
-    }
-
-    .about-me{
-        margin: 4rem 3rem;
+        margin: 3rem 4rem;
+        text-align: center;
     }
 
     .hero{
-        padding-top: 2rem;
+        padding-top: 1rem;
         padding-bottom: 4rem;
     }
 
 
     .intro{
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+    }
+
+    .intro img {
+        width: 12%;
+        border-radius: 50%;
     }
 
     .container-hero > h1{
-        font-size: 5rem;
+        font-size: 5.5rem;
     }
 
     .hero-txt > p{
-        font-size: 2.4rem;
-        padding-right: 5rem;
-        line-height: 4.3rem;
+        font-size: 1.5rem;
+        padding-left: 11rem;
+        padding-right: 11rem;
+        line-height: 2.5rem;
+        padding-top: 1.5rem;
+        text-transform: capitalize;
+        width: 100%;
     }
 
     .btn-style{
         padding: 1rem 4rem;
+        font-size: 1.3rem;
     }
 
     /* about-styling */
     .about-me{
-        margin: 3rem 2.5rem;
+        margin: 3rem 4rem;
     }
     
     .about-title{
@@ -521,7 +864,7 @@ hr{
     }
     
     .about1 > p{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         line-height: 1.9rem;
         letter-spacing: 0.5px;
     }
@@ -550,14 +893,14 @@ hr{
         background-color: rgb(226, 226, 226);
         padding: 0.5rem 1.5rem;
         border-radius: 5px;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         letter-spacing: 0.5px;
     }
 
 
     /* project styling */
     .project{
-        margin: 10rem 2.5rem;
+        margin: 10rem 4rem;
     }
     
     .proj-descrpt{
@@ -576,7 +919,7 @@ hr{
     
 
     .grid img{
-        width: 100%;
+        width: 90%;
         display: block;
         -o-object-fit: cover;
         object-fit: cover
@@ -604,6 +947,123 @@ hr{
 
     .btn-body{
         padding: 1rem 3rem;
+    }
+
+    /* resume styling */
+    .resume{
+        margin: 6rem 4rem;
+    }
+
+    .resume-container{
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        gap: 3rem;
+        font-size: 1.2rem;
+        letter-spacing: 0.5px;
+        padding-top: 2.5rem;
+        line-height: 2rem;
+    }
+
+    .resume-container img{
+        width: 55%;
+    }
+
+    .flex1{
+        width: 50%;
+    }
+    
+    .flex2{
+        width: 50%;
+    }
+
+    .training-cont{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 3rem;
+        margin-top: 1.5rem;
+        align-items: flex-start ;
+        height: 85vh;
+        font-size: 1.2rem;
+        letter-spacing: 0.5px;
+        line-height: 2rem;
+        }
+    
+        .txt-exp{
+            padding-bottom: 0.5rem;
+        }
+    
+        .training-cont h3{
+            font-size: 1.8rem;
+        }
+    
+        .experience h4{
+            color: #555555;
+            padding-bottom: 1rem;
+        }
+
+           /* contact */
+
+    .contact{
+        padding: 5rem 4rem;
+    }
+
+    .contact-container > p{
+        padding: 3rem 0rem;
+        font-size: 2.2rem;
+    }
+
+    .contact-btn{
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding: 1rem 3rem;
+    }
+
+    /* footer */
+    
+    .footer{
+        margin-top: 0rem;
+        padding: 8rem 4rem;  
+    }
+    
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+        letter-spacing: 0.5px;
+        line-height: 1.7rem;
+    }
+
+    .cont1-ft{
+        width: 50%;
+    }
+
+    .cont1-ft > p{
+        padding: 1rem 0rem;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+    }
+
+    .cont2-ft > h2{
+        padding-bottom: 2rem;
+    }
+    
+
+    .cont2-ft > a{
+        padding: 2rem 0.35rem;
+    }
+        
+    .copyright{
+        font-size: 1.1rem;
+        padding-top: 3rem;
+    }
+    
+    .footer-container h2{
+        /* padding-bottom: 1rem; */
+        text-transform: uppercase;
+        font-size: 1.7rem;
     }
 
 }
@@ -756,5 +1216,116 @@ hr{
 
     .btn-body{
         padding: 1rem 3rem;
+    }
+
+    /* resume styling */
+    .resume{
+        margin: 6rem 3rem;
+    }
+
+    .resume-container{
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        gap: 3rem;
+        font-size: 1.2rem;
+        letter-spacing: 0.5px;
+        padding-top: 2.5rem;
+        line-height: 2rem;
+    }
+
+    .resume-container img{
+        width: 55%;
+    }
+
+    .flex1{
+        width: 50%;
+    }
+    
+    .flex2{
+        width: 50%;
+    }
+
+    .training-cont{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 3rem;
+        margin-top: 1.5rem;
+        align-items: flex-start ;
+        height: 85vh;
+        font-size: 1.2rem;
+        letter-spacing: 0.5px;
+        line-height: 2rem;
+        }
+    
+        .txt-exp{
+            padding-bottom: 0.5rem;
+        }
+    
+        .training-cont h3{
+            font-size: 1.8rem;
+        }
+    
+        .experience h4{
+            color: #555555;
+            padding-bottom: 1rem;
+        }
+
+           /* contact */
+
+    .contact{
+        padding: 5rem 2.5rem;
+    }
+
+    .contact-container > p{
+        padding: 3rem 0rem;
+        font-size: 2.2rem;
+    }
+
+    .contact-btn{
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    /* footer */
+    
+    .footer{
+        margin-top: 0rem;
+        padding: 8rem 2.5rem;  
+    }
+    
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+        letter-spacing: 0.5px;
+        line-height: 2rem;
+    }
+
+    .cont1-ft{
+        width: 50%;
+    }
+
+    .cont1-ft > p{
+        padding: 1.5rem 0rem;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+    }
+
+   /*  .cont2-ft > h2{
+        padding-bottom: 3rem;
+    }
+     */
+    .copyright{
+        font-size: 1.2rem;
+        padding-top: 3rem;
+    }
+    
+    .footer-container h2{
+        padding-bottom: 1rem;
+        text-transform: uppercase;
+        font-size: 2rem;
     }
 }
